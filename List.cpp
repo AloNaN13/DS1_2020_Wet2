@@ -1,10 +1,4 @@
 
-/* OLD CODE FROM WET1
- *
- *
-
-
-
 #include "List.h"
 
 void List::deleteListsNodes(ListNode* node){
@@ -15,45 +9,45 @@ void List::deleteListsNodes(ListNode* node){
 }
 
 List::~List(){
-    if(first_node){
-        deleteListsNodes(first_node);
+    if(_first_node){
+        deleteListsNodes(_first_node);
     }
 }
 
-// insert a node after the curr_node given as a parameter
-// no need to check if the node exists - happens outside of func
-ListResult List::insertListNode(ListNode *curr_node,
-                                AvlTree<AvlTree<int, int>, int> &views_courses,
-                                int time_of_views) {
-    ListNode* new_node = new ListNode(time_of_views,views_courses);
-    if(curr_node != last_node){
-        curr_node->getNextNode()->setPrevNode(new_node);
-        new_node->setNextNode(curr_node->getNextNode());
+// insert the given node as the first node
+// no need to check if the node exists - happens outside of func?
+ListResult List::insertListNode(ListNode* node_to_insert) {
+
+    if(_first_node == nullptr){
+        _first_node = node_to_insert;
+        _first_node->setPrevNode(nullptr);
+        _first_node->setNextNode(nullptr);
+        _last_node = node_to_insert;
     }
-    if(curr_node == last_node){
-        last_node = new_node;
+    else{
+        node_to_insert->setNextNode(_first_node);
+        node_to_insert->setPrevNode(nullptr);
+        _first_node->setPrevNode(node_to_insert);
+        _first_node = node_to_insert;
     }
-    new_node->setPrevNode(curr_node);
-    curr_node->setNextNode(new_node);
     return LIST_SUCCESS;
 }
 
-// no need to check if the node exists - happens outside of func
-ListResult List::removeListNode(ListNode *node) {
-    // we never try to erase the first_node if it's not quit? - deal with it?
-    if(node != first_node){
-        node->getPrevNode()->setNextNode(node->getNextNode());
+// no need to check if the node exists - happens outside of func?
+ListResult List::removeListNode(ListNode* node_to_remove) {
+    if(node_to_remove != _first_node){
+        node_to_remove->getPrevNode()->setNextNode(node_to_remove->getNextNode());
     }
     else{ // it is the first node
-        //ERROR? should happen only in quit
+        _first_node = node_to_remove->getNextNode();
     }
-    if(node != last_node){
-        node->getNextNode()->setPrevNode(node->getPrevNode());
+    if(node_to_remove != _last_node){
+        node_to_remove->getNextNode()->setPrevNode(node_to_remove->getPrevNode());
     }
     else{ // it is the last node
-        last_node = node->getPrevNode();
+        _last_node = node_to_remove->getPrevNode();
     }
-    delete(node);
+    delete(node_to_remove);
     return LIST_SUCCESS;
 }
 

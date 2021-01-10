@@ -97,6 +97,12 @@
 		<Unit filename="/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/CoursesManager.h">
 			<Option target="DS1_2020_Wet2"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/HashTable.cpp">
+			<Option target="DS1_2020_Wet2"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/HashTable.h">
+			<Option target="DS1_2020_Wet2"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/List.cpp">
 			<Option target="DS1_2020_Wet2"/>
 		</Unit>
