@@ -1,63 +1,32 @@
 
-/* OLD CODE FROM WET1
- *
- *
-
-
-
 /****************************************************************************/
 /*                                                                          */
-/* STRUCT FOR THE COURSE OBJECT                                             */
-/* @var _id, _classes_array, _num_of_classes :                  */
-/* the course ID, classes array, number of classes      */
-/* using getters and setters                                                */
+/* COMMENT ABOUT COURSE                                                     */
 /*                                                                          */
 /****************************************************************************/
 
-#ifndef DATA_STRUCTS_1_COURSE_H
-#define DATA_STRUCTS_1_COURSE_H
+#ifndef DS1_WET2_COURSE_H
+#define DS1_WET2_COURSE_H
 
 #include "MyClass.h"
-
+#include "HashTable.h"
 
 
 class Course{
 private:
-    int _id; //class id
-    MyClass* _classes_array; //pointer to classes array
-    int _num_of_classes; //number of total classes
+    int _id; // the course id
+    HashTable<MyClass> _classes_table; // table for the course's classes
+    int _num_of_classes; // the total number of the course's classes
 public:
-    /**
-     * constructor of new course
-     * @param id id of course
-     * @param num_of_classes total number of classes per course
-     */
-    Course(const int id, int num_of_classes);
-    /**
-     * destructor, not default to avoid mem leaks
-     */
-    ~Course() {delete [] _classes_array;};
-    /**
-     * copy constructor
-     * @param course
-     */
-    Course(const Course &course);
-    /**
-     * assignment operator
-     * @param course
-     * @return node with new value
-     */
-    Course& operator=(const Course &course) = default;
-    /**
-     *
-     * @return pointer to the classes array
-     */
-    MyClass* getClasses();
-    /**
-     *
-     * @return number of classes
-     */
-    int getNumOfClasses();
+    explicit Course(int id): _id(id), _classes_table(*(new HashTable<MyClass>(2))), _num_of_classes(0) {};
+    // need another ctor?
+    ~Course() = default;
+    Course(const Course &course) = default;
+    Course& operator=(const Course &course) = delete;
+
+    HashTable<MyClass>& getClassesTable() {return _classes_table;};
+    int getNumOfClasses() {return _num_of_classes;};
+
 };
 
-#endif //DATA_STRUCTS_1_COURSE_H
+#endif //DS1_WET2_COURSE_H

@@ -16,7 +16,6 @@ add_executable(DS1_2020_Wet2
         HashTable.h
         library2.cpp
         library2.h
-        List.cpp
         List.h
         main.cpp
         # main2.cpp

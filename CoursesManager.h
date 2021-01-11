@@ -1,15 +1,9 @@
 
-/* OLD CODE FROM WET1
- *
- *
+#ifndef DS1_WET2_COURSESMANAGER_H
+#define DS1_WET2_COURSESMANAGER_H
 
-
-
-#ifndef DATA_STRUCTS_1_COURSESMANAGER_H
-#define DATA_STRUCTS_1_COURSESMANAGER_H
-
+#include "HashTable.h"
 #include "AvlTree.h"
-#include "List.h"
 #include "Course.h"
 #include "MyClass.h"
 
@@ -23,62 +17,56 @@ typedef enum CMResult_t{
 }CMResult;
 
 
-class CoursesManager {
+class TripleKey{
 private:
-    AvlTree<Course,int> _general_courses_tree; //the general tree of all courses in the system
-    List general_views_list; //the list that represents the views of different classes
-    int num_of_classes; //number of total classes
+    int _num_of_views;
+    int _course_id;
+    int _class_id;
 public:
-    /**
-     * ctor+dtor+ccot+assignop
-     */
-    CoursesManager(): num_of_classes(0) {}; // need to implement it more explicitly?
-    ~CoursesManager() = default;
-    CoursesManager(const CoursesManager& courses_manager) = default;
-    CoursesManager& operator=(const CoursesManager& courses_manager) = default;
+    TripleKey(int num_of_views, int course_id, int class_id):
+                                                _num_of_views(num_of_views),
+                                                _course_id(course_id),
+                                                _class_id(class_id) {};
+    ~TripleKey() = default;
+    TripleKey(const TripleKey& tri_key) = default;
+    TripleKey& operator=(const TripleKey& tri_key) = delete;
 
-    //functions needed to be implemented in task
-    /***
-    * Adds a course to the system- adds to the general tree of courses
-     * connects to the sum "0" tree connected to the node in list of views and classes to the tree under the course
-     * @param courseID,numOfClasses - the course ID and number of classes to add
-    * @return result
-    */
-    CMResult AddCourse (int courseID, int numOfClasses);
-    /***
-    * Removes the course provided in the ID from the system
-     * deletes from tree of views, general courses tree, deletes sum if needed and updates total views
-     * @param courseID - the course ID to remove
-    * @return result
-    */
-    CMResult RemoveCourse(int courseID);
-    /***
-    * Adds time watched
-    * Adds the time to the provided class and course - updates the views list, deletes sum in needed
-     * updates the tree under thr=e privious sum and inserts the node under the new sum
-     * (number of iterations on the list is is new time - previous)
-    * @param courseID,classID,time
-    * @return result
-    */
-    CMResult WatchClass(int courseID, int classID, int time);
-    /***
-    * number of total views per class in course provided
-    * return the parameter that is stored in class object that holds the time
-    * @param courseID,classID - the relevant IDs
-    * @param timeViewed - ptr of the return variable that time will be inserted there
-    * @return result
-    */
-    CMResult TimeViewed(int courseID, int classID, int *timeViewed);
-    /***
-    * return the most viewed classes, if the sum is the same, we return it by the course index
-    * iterates over the watch list from the last node numOfClasses times and returns by order
-    * @param  numOfClasses - number of classes to be printed
-    * @param classes,courses - the arrays to store the relevant classes and courses
-    * @return result
-    */
-    CMResult GetMostViewedClasses(int numOfClasses, int *courses, int *classes);
+    // getters
+    int getNumOfViews() { return _num_of_views;};
+    int getCourseID() { return _course_id;};
+    int getClassID() {return _class_id;};
+
+    // comparison funcs
+    bool operator==(const TripleKey other);
+    bool operator<(const TripleKey other);
+    bool operator>(const TripleKey other);
 
 };
 
 
-#endif //DATA_STRUCTS_1_COURSESMANAGER_H
+class CoursesManager{
+private:
+    HashTable<Course> _general_courses_table; // a dynamic array that represents the courses in the system
+    AvlTree<TripleKey,int> _general_views_tree; // an avl tree that represents the order of viewed classes
+    int _num_of_classes; // number of total classes in the system
+    int _num_of_viewed_classes; // number of total classes in the system with views
+public:
+    CoursesManager(): _general_courses_table(*(new HashTable<Course>(2))),
+                      _general_views_tree(*(new AvlTree<TripleKey,int>)),
+                      _num_of_classes(0), _num_of_viewed_classes(0) {}; // need to implement it more explicitly?
+    ~CoursesManager() = default;
+    CoursesManager(const CoursesManager& courses_manager) = default;
+    CoursesManager& operator=(const CoursesManager& courses_manager) = delete;
+
+    //functions needed to be implemented in task
+    CMResult AddCourse (int courseID);
+    CMResult RemoveCourse(int courseID);
+    CMResult AddClass(int courseID, int* classID);
+    CMResult WatchClass(int courseID, int classID, int time);
+    CMResult TimeViewed(int courseID, int classID, int *timeViewed);
+    CMResult GetIthWatchedClasses(int i, int *coursID, int *classID);
+
+};
+
+
+#endif //DS1_WET2_COURSESMANAGER_H
