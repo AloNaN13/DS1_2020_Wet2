@@ -3,10 +3,16 @@
 #define DS1_WET2_COURSESMANAGER_H
 
 #include "HashTable.h"
+#include "List.h"
 #include "AvlTree.h"
-#include "Course.h"
 #include "MyClass.h"
+#include "Course.h"
+#include "TripleKey.h"
 
+//made global because i need in my class and i dont have a pointer to course manager, if you have better idea
+
+HashTable<Course> _general_courses_table; // a dynamic array that represents the courses in the system //coursrs? not int?
+AvlTree<TripleKey,TripleKey> _general_views_tree; // an avl tree that represents the order of viewed classes
 
 // enums and not exceptions
 typedef enum CMResult_t{
@@ -17,37 +23,12 @@ typedef enum CMResult_t{
 }CMResult;
 
 
-class TripleKey{
-private:
-    int _num_of_views;
-    int _course_id;
-    int _class_id;
-public:
-    TripleKey(int num_of_views, int course_id, int class_id):
-                                                _num_of_views(num_of_views),
-                                                _course_id(course_id),
-                                                _class_id(class_id) {};
-    ~TripleKey() = default;
-    TripleKey(const TripleKey& tri_key) = default;
-    TripleKey& operator=(const TripleKey& tri_key) = delete;
-
-    // getters
-    int getNumOfViews() { return _num_of_views;};
-    int getCourseID() { return _course_id;};
-    int getClassID() {return _class_id;};
-
-    // comparison funcs
-    bool operator==(const TripleKey other);
-    bool operator<(const TripleKey other);
-    bool operator>(const TripleKey other);
-
-};
 
 
 class CoursesManager{
 private:
-    HashTable<Course> _general_courses_table; // a dynamic array that represents the courses in the system
-    AvlTree<TripleKey,int> _general_views_tree; // an avl tree that represents the order of viewed classes
+//  HashTable<Course> _general_courses_table; // a dynamic array that represents the courses in the system //coursrs? not int?
+//    AvlTree<TripleKey,int> _general_views_tree; // an avl tree that represents the order of viewed classes
     int _num_of_classes; // number of total classes in the system
     int _num_of_viewed_classes; // number of total classes in the system with views
 public:
@@ -65,6 +46,7 @@ public:
     CMResult WatchClass(int courseID, int classID, int time);
     CMResult TimeViewed(int courseID, int classID, int *timeViewed);
     CMResult GetIthWatchedClasses(int i, int *coursID, int *classID);
+    void Quit();
 
 };
 

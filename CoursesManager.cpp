@@ -2,19 +2,7 @@
 
 #include "CoursesManager.h"
 
-bool TripleKey::operator==(const TripleKey other){
-    return (_num_of_views == other._num_of_views &&
-            _course_id == other._course_id &&
-            _class_id == other._class_id);
-}
 
-bool TripleKey::operator<(const TripleKey other){
-    //TODO
-}
-
-bool TripleKey::operator>(const TripleKey other){
-    //TODO
-}
 
 
 CMResult CoursesManager::AddCourse(int courseID){
@@ -25,8 +13,13 @@ CMResult CoursesManager::AddCourse(int courseID){
         if(_general_courses_table.getTableNode(courseID) != nullptr){
             return CM_FAILURE;
         }
+        Course* course = new Course(courseID);
+        ListNode<Course> *course_node = new ListNode<Course>(courseID,course);
+        _general_courses_table.insertTableNode(course_node); //where link to course from table?
+    //    free(course_node);
 
-        //TODO
+
+
 
         return CM_SUCCESS;
     } catch(...){
@@ -42,8 +35,18 @@ CMResult CoursesManager::RemoveCourse(int courseID) {
         if(_general_courses_table.getTableNode(courseID) != nullptr){
             return CM_FAILURE;
         }
-
-        //TODO
+        Course *course_element = _general_courses_table.getTableNode(courseID)->getNodeValue();
+        HashTable<MyClass> *relevant_classes = course_element->getClassesTable();
+        int relevant_num_of_views;
+        //NEED TO SOMEWARE COMPARISON MATHOD ROTATING BETWEEN KEYS
+        for(int i=0;i<course_element->getNumOfClasses();i++){
+            relevant_num_of_views = relevant_classes->getTableNode(i)->getNodeValue()->getNumOfViews();
+            TripleKey* to_delete = new TripleKey(i,courseID,relevant_num_of_views);
+            _general_views_tree.remove(*to_delete);
+            free(to_delete);
+        }
+        relevant_classes->deleteHashLists();
+        _general_courses_table.removeTableNode(courseID);
 
         return CM_SUCCESS;
     } catch(...){
@@ -83,9 +86,20 @@ CMResult CoursesManager::AddClass(int courseID, int* classID) {
         if(_general_courses_table.getTableNode(courseID) != nullptr){
             return CM_FAILURE;
         }
-
-        //TODO
-
+        MyClass* clas = new MyClass(*classID,courseID);
+        ListNode<MyClass> *clas_node = new ListNode<MyClass>(*classID,clas);
+        Course* relevant_course = _general_courses_table.getTableNode(courseID)->getNodeValue();
+        HashTable<MyClass> clas_table = relevant_course->getClassesTable();
+        clas_table.insertTableNode(clas_node);
+        if(relevant_course->getIsClasses()==0) {
+            relevant_course->setIsClasses(1);
+            relevant_course->incNumOfClasses();
+        }
+        else{
+            relevant_course->incNumOfClasses();
+        }
+   //     free(clas_node);
+     //   free(clas);
         return CM_SUCCESS;
     } catch(...){
         return CM_ALLOCATION_ERROR;
@@ -167,4 +181,14 @@ CMResult CoursesManager::GetIthWatchedClasses(int i, int *coursID, int *classID)
     } catch(...){
         return CM_ALLOCATION_ERROR;
     }
+}
+
+void CoursesManager::Quit() {
+   int num_of_courses = _general_courses_table.getTableSize();
+   int course_id = _general_courses_table//need to have iteration over list
+   for(int i=0;i<num_of_courses;i++){
+       CoursesManager::RemoveCourse(course_id);
+       course_id
+       ///NOT FINISHED ///
+   }
 }

@@ -1,3 +1,9 @@
+#include "library2.h"
+#include "CoursesManager.h"
+void *Init(){
+    CoursesManager* DS = new CoursesManager();
+    return (void*)DS;
+}
 
 /* OLD CODE FROM WET1
  *
