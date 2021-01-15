@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DS1_2020_Wet2.dir/Course.cpp.o"
   "CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.o"
-  "CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.o"
-  "CMakeFiles/DS1_2020_Wet2.dir/List.cpp.o"
-  "CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.o"
+  "CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o"
   "CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o"
   "CMakeFiles/DS1_2020_Wet2.dir/main.cpp.o"
   "DS1_2020_Wet2.exe"

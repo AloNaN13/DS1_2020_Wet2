@@ -83,22 +83,9 @@ CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/CoursesManager.cpp -o CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.s
 
-CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.o: CMakeFiles/DS1_2020_Wet2.dir/flags.make
-CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.o: ../HashTable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.o -c /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/HashTable.cpp
-
-CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/HashTable.cpp > CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.i
-
-CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/HashTable.cpp -o CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.s
-
 CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o: CMakeFiles/DS1_2020_Wet2.dir/flags.make
 CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o: ../library2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o -c /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/library2.cpp
 
 CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.i: cmake_force
@@ -109,22 +96,9 @@ CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/library2.cpp -o CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.s
 
-CMakeFiles/DS1_2020_Wet2.dir/List.cpp.o: CMakeFiles/DS1_2020_Wet2.dir/flags.make
-CMakeFiles/DS1_2020_Wet2.dir/List.cpp.o: ../List.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DS1_2020_Wet2.dir/List.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS1_2020_Wet2.dir/List.cpp.o -c /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/List.cpp
-
-CMakeFiles/DS1_2020_Wet2.dir/List.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS1_2020_Wet2.dir/List.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/List.cpp > CMakeFiles/DS1_2020_Wet2.dir/List.cpp.i
-
-CMakeFiles/DS1_2020_Wet2.dir/List.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS1_2020_Wet2.dir/List.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/List.cpp -o CMakeFiles/DS1_2020_Wet2.dir/List.cpp.s
-
 CMakeFiles/DS1_2020_Wet2.dir/main.cpp.o: CMakeFiles/DS1_2020_Wet2.dir/flags.make
 CMakeFiles/DS1_2020_Wet2.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DS1_2020_Wet2.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DS1_2020_Wet2.dir/main.cpp.o"
 	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS1_2020_Wet2.dir/main.cpp.o -c /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/main.cpp
 
 CMakeFiles/DS1_2020_Wet2.dir/main.cpp.i: cmake_force
@@ -135,42 +109,38 @@ CMakeFiles/DS1_2020_Wet2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS1_2020_Wet2.dir/main.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/main.cpp -o CMakeFiles/DS1_2020_Wet2.dir/main.cpp.s
 
-CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.o: CMakeFiles/DS1_2020_Wet2.dir/flags.make
-CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.o: ../MyClass.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.o -c /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/MyClass.cpp
+CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o: CMakeFiles/DS1_2020_Wet2.dir/flags.make
+CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o: ../TripleKey.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o -c /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/TripleKey.cpp
 
-CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/MyClass.cpp > CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.i
+CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/TripleKey.cpp > CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.i
 
-CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/MyClass.cpp -o CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.s
+CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/TripleKey.cpp -o CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.s
 
 # Object files for target DS1_2020_Wet2
 DS1_2020_Wet2_OBJECTS = \
 "CMakeFiles/DS1_2020_Wet2.dir/Course.cpp.o" \
 "CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.o" \
-"CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.o" \
 "CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o" \
-"CMakeFiles/DS1_2020_Wet2.dir/List.cpp.o" \
 "CMakeFiles/DS1_2020_Wet2.dir/main.cpp.o" \
-"CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.o"
+"CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o"
 
 # External object files for target DS1_2020_Wet2
 DS1_2020_Wet2_EXTERNAL_OBJECTS =
 
 DS1_2020_Wet2.exe: CMakeFiles/DS1_2020_Wet2.dir/Course.cpp.o
 DS1_2020_Wet2.exe: CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.o
-DS1_2020_Wet2.exe: CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.o
 DS1_2020_Wet2.exe: CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o
-DS1_2020_Wet2.exe: CMakeFiles/DS1_2020_Wet2.dir/List.cpp.o
 DS1_2020_Wet2.exe: CMakeFiles/DS1_2020_Wet2.dir/main.cpp.o
-DS1_2020_Wet2.exe: CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.o
+DS1_2020_Wet2.exe: CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o
 DS1_2020_Wet2.exe: CMakeFiles/DS1_2020_Wet2.dir/build.make
 DS1_2020_Wet2.exe: CMakeFiles/DS1_2020_Wet2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable DS1_2020_Wet2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable DS1_2020_Wet2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DS1_2020_Wet2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

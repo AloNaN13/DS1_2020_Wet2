@@ -12,18 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0275b312-6ae9-4184-b8b2-f5a04d5991cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Course.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Course.h" beforeDir="false" afterPath="$PROJECT_DIR$/Course.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoursesManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CoursesManager.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoursesManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/CoursesManager.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashTable.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/List.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/List.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyClass.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyClass.h" beforeDir="false" afterPath="$PROJECT_DIR$/MyClass.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripleKey.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TripleKey.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripleKey.h" beforeDir="false" afterPath="$PROJECT_DIR$/TripleKey.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DS1_2020_Wet2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DS1_2020_Wet2.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +44,7 @@
   </component>
   <component name="ProjectId" id="1mkViCjj3iOuM9tblRsnV0htbPt" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ObjectiveC" />
     <property name="node.js.detected.package.eslint" value="true" />

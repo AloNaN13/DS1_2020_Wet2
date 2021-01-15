@@ -177,86 +177,32 @@ CoursesManager.cpp.s:
 	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.s
 .PHONY : CoursesManager.cpp.s
 
-HashTable.o: HashTable.cpp.o
+TripleKey.o: TripleKey.cpp.o
 
-.PHONY : HashTable.o
-
-# target to build an object file
-HashTable.cpp.o:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.o
-.PHONY : HashTable.cpp.o
-
-HashTable.i: HashTable.cpp.i
-
-.PHONY : HashTable.i
-
-# target to preprocess a source file
-HashTable.cpp.i:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.i
-.PHONY : HashTable.cpp.i
-
-HashTable.s: HashTable.cpp.s
-
-.PHONY : HashTable.s
-
-# target to generate assembly for a file
-HashTable.cpp.s:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/HashTable.cpp.s
-.PHONY : HashTable.cpp.s
-
-List.o: List.cpp.o
-
-.PHONY : List.o
+.PHONY : TripleKey.o
 
 # target to build an object file
-List.cpp.o:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/List.cpp.o
-.PHONY : List.cpp.o
+TripleKey.cpp.o:
+	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o
+.PHONY : TripleKey.cpp.o
 
-List.i: List.cpp.i
+TripleKey.i: TripleKey.cpp.i
 
-.PHONY : List.i
-
-# target to preprocess a source file
-List.cpp.i:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/List.cpp.i
-.PHONY : List.cpp.i
-
-List.s: List.cpp.s
-
-.PHONY : List.s
-
-# target to generate assembly for a file
-List.cpp.s:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/List.cpp.s
-.PHONY : List.cpp.s
-
-MyClass.o: MyClass.cpp.o
-
-.PHONY : MyClass.o
-
-# target to build an object file
-MyClass.cpp.o:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.o
-.PHONY : MyClass.cpp.o
-
-MyClass.i: MyClass.cpp.i
-
-.PHONY : MyClass.i
+.PHONY : TripleKey.i
 
 # target to preprocess a source file
-MyClass.cpp.i:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.i
-.PHONY : MyClass.cpp.i
+TripleKey.cpp.i:
+	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.i
+.PHONY : TripleKey.cpp.i
 
-MyClass.s: MyClass.cpp.s
+TripleKey.s: TripleKey.cpp.s
 
-.PHONY : MyClass.s
+.PHONY : TripleKey.s
 
 # target to generate assembly for a file
-MyClass.cpp.s:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/MyClass.cpp.s
-.PHONY : MyClass.cpp.s
+TripleKey.cpp.s:
+	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.s
+.PHONY : TripleKey.cpp.s
 
 library2.o: library2.cpp.o
 
@@ -327,15 +273,9 @@ help:
 	@echo "... CoursesManager.o"
 	@echo "... CoursesManager.i"
 	@echo "... CoursesManager.s"
-	@echo "... HashTable.o"
-	@echo "... HashTable.i"
-	@echo "... HashTable.s"
-	@echo "... List.o"
-	@echo "... List.i"
-	@echo "... List.s"
-	@echo "... MyClass.o"
-	@echo "... MyClass.i"
-	@echo "... MyClass.s"
+	@echo "... TripleKey.o"
+	@echo "... TripleKey.i"
+	@echo "... TripleKey.s"
 	@echo "... library2.o"
 	@echo "... library2.i"
 	@echo "... library2.s"

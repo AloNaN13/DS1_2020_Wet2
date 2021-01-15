@@ -12,14 +12,12 @@ add_executable(DS1_2020_Wet2
         Course.h
         CoursesManager.cpp
         CoursesManager.h
-
         HashTable.h
         library2.cpp
         library2.h
         List.h
         main.cpp
         # main2.cpp
-
         MyClass.h
         TripleKey.h
         TripleKey.cpp)
