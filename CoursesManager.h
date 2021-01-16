@@ -26,16 +26,21 @@ typedef enum CMResult_t{
 
 class CoursesManager{
 private:
-    HashTable<Course> _general_courses_table; // a dynamic array that represents the courses in the system //coursrs? not int?
-    AvlTree<TripleKey,TripleKey> _general_views_tree; // an avl tree that represents the order of viewed classes
+    HashTable<Course>* _general_courses_table; // a dynamic array that represents the courses in the system //coursrs? not int?
+    AvlTree<TripleKey,TripleKey>* _general_views_tree; // an avl tree that represents the order of viewed classes
     int _num_of_courses; // number of total courses in the system
     int _num_of_classes; // number of total classes in the system
     int _num_of_viewed_classes; // number of total classes in the system with views
 public:
-    CoursesManager(): _general_courses_table(*(new HashTable<Course>(2))),
-                      _general_views_tree(*(new AvlTree<TripleKey,TripleKey>)),
-                      _num_of_classes(0), _num_of_viewed_classes(0) {}; // need to implement it more explicitly?
-    ~CoursesManager()  {this->_general_courses_table.deleteHashValues();};
+    CoursesManager(): _general_courses_table(new HashTable<Course>(2)),
+                      _general_views_tree(new AvlTree<TripleKey,TripleKey>),
+                      _num_of_classes(0), _num_of_viewed_classes(0), _num_of_courses(0) {
+
+    }; // need to implement it more explicitly?
+    ~CoursesManager()  {this->_general_courses_table->deleteHashValues();
+    delete _general_courses_table;
+    delete _general_views_tree;
+    };
     CoursesManager(const CoursesManager& courses_manager) = default;
     CoursesManager& operator=(const CoursesManager& courses_manager) = delete;
 

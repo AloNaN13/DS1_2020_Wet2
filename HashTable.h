@@ -32,9 +32,12 @@ private:
     int _hash_table_size;
 public:
     //ctor
-    explicit HashTable(int size): _hash_table(new List<Element>[size]), _hash_table_size(size) {};
+    explicit HashTable(int size): _hash_table(new List<Element>[size]), _hash_table_size(size) {
+
+    };
     //dtor
-    ~HashTable() {delete[] _hash_table;};
+    ~HashTable() {
+        delete[] _hash_table;};
     //delete cctor + assignctor
     HashTable(const HashTable& hash_table) = default;
     HashTable& operator=(const HashTable& hash_table) = delete;
@@ -138,6 +141,7 @@ HTResult HashTable<Element>::adjustTable(int purpose){
     this->_hash_table = new_hash_table;
     this->_hash_table_size = new_table_size;
     delete[] old_hash_table;
+
     return HT_SUCCESS;
 }
 
@@ -145,7 +149,7 @@ template<class Element>
 HTResult HashTable<Element>::deleteHashValues(){
     for(int i = 0; i < _hash_table_size; i++){
         ListNode<Element>* curr_node = this->_hash_table[i].getListsFirstNode();
-        while(curr_node != nullptr){
+        while(curr_node != nullptr  ){
             delete (curr_node->getNodeValue());
             curr_node = curr_node->getNextNode();
         }
