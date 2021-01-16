@@ -46,10 +46,10 @@ public:
     int getHashedKey(int key, int purpose);
     HTResult insertTableNode(ListNode<Element>* node_to_insert);
     HTResult removeTableNode(int key);
-    HTResult shrinkTable();
-    HTResult expandTable();
+    //HTResult shrinkTable();
+    //HTResult expandTable();
     HTResult adjustTable(int purpose);
-    HTResult deleteHashLists();
+    HTResult deleteHashValues();
 
 };
 
@@ -59,10 +59,10 @@ ListNode<Element>* HashTable<Element>::getTableNode(int key){
     int hashed_key = getHashedKey(key, FUNCS);
     ListNode<Element>* curr_node = _hash_table[hashed_key].getListsFirstNode();
     while(curr_node != nullptr){
-        if(curr_node->getNodeKey() == key){ // TO IMPLEMENT getNodeKey in List
+        if(curr_node->getNodeKey() == key){
             return curr_node;
         }
-        curr_node = curr_node->getNextNode()
+        curr_node = curr_node->getNextNode();
     }
     return nullptr;
 }
@@ -84,7 +84,7 @@ int HashTable<Element>::getHashedKey(int key, int purpose){
 template<class Element>
 HTResult HashTable<Element>::insertTableNode(ListNode<Element>* node_to_insert){
     // creates node outside of function, in CoursesManager
-    int hashed_key = getHashedKey(node_to_insert->getNodeValue()->getID(), FUNCS) // IMPLEMENT getPtrFromNode
+    int hashed_key = getHashedKey(node_to_insert->getNodeValue()->getID(), FUNCS);
     _hash_table[hashed_key].insertListNode(node_to_insert);
     return HT_SUCCESS;
 }
@@ -103,6 +103,7 @@ HTResult HashTable<Element>::removeTableNode(int key){
     return HT_SUCCESS;
 }
 
+/*
 template<class Element>
 HTResult HashTable<Element>::shrinkTable(){
     return adjustTable(SHRINK);
@@ -112,6 +113,7 @@ template<class Element>
 HTResult HashTable<Element>::expandTable(){
     return adjustTable(EXPAND);
 }
+*/
 
 template<class Element>
 HTResult HashTable<Element>::adjustTable(int purpose){
@@ -140,8 +142,15 @@ HTResult HashTable<Element>::adjustTable(int purpose){
 }
 
 template<class Element>
-HTResult HashTable<Element>::deleteHashLists(){
-    //TODO
+HTResult HashTable<Element>::deleteHashValues(){
+    for(int i = 0; i < _hash_table_size; i++){
+        ListNode<Element>* curr_node = this->_hash_table[i].getListsFirstNode();
+        while(curr_node != nullptr){
+            delete (curr_node->getNodeValue());
+            curr_node = curr_node->getNextNode();
+        }
+    }
+    return HT_SUCCESS;
 }
 
 

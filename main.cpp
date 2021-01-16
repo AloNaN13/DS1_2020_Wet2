@@ -1,26 +1,11 @@
 
-/* OLD CODE FROM WET1
- *
- *
-
-
-//
-// Created by svet on 12/18/2020.
-//
-
-
 // MAIN FOR TESTING!!!!
 
-
-
-
-#include "AvlTree.h"
 #include <vector>
 #include <ostream>
 #include <random>
 #include <chrono>
 #include <algorithm>
-
 
 #define addNode insert
 #define removeNode remove
@@ -42,24 +27,30 @@ int main(){
 
 */
 
-
-
-
-
-
-
-
-
-
-
+    int curr_class_added = -1;
 
     CoursesManager manager=*new CoursesManager();
-    manager.AddCourse(17,26);
-    manager.AddCourse(14,26);
-    manager.RemoveCourse(14);
-    manager.AddCourse(14,26);
-    manager.WatchClass(14,0,16);
-    manager.WatchClass(17,0,31);
+    manager.AddCourse(17);
+    manager.AddCourse(4);
+    manager.RemoveCourse(4);
+    manager.AddCourse(4);
+    manager.AddClass(4, &curr_class_added);
+    manager.AddClass(4, &curr_class_added);
+
+    manager.WatchClass(4,1,36);
+    manager.AddClass(17, &curr_class_added);
+    manager.WatchClass(17,0,32);
+
+    int time_viewed = -1;
+    manager.TimeViewed(17, 0, &time_viewed);
+    printf("coursesID: 17, classID: 0, time viewed: %d\n", time_viewed);
+
+    int courseID = -1;
+    int classID = -1;
+    int i = 2;
+    manager.GetIthWatchedClass(2,&courseID,&classID);
+    printf("The %d viewed class is: \ncourseID: %d \nclassID: %d\n", i, courseID, classID);
+
     manager.WatchClass(14,0,14);
     manager.WatchClass(14,0,4);
     manager.WatchClass(14,0,9);

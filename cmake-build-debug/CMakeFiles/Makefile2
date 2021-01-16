@@ -74,12 +74,12 @@ preinstall:
 CMakeFiles/DS1_2020_Wet2.dir/all:
 	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/depend
 	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target DS1_2020_Wet2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target DS1_2020_Wet2"
 .PHONY : CMakeFiles/DS1_2020_Wet2.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DS1_2020_Wet2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DS1_2020_Wet2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/DS1_2020_Wet2.dir/rule

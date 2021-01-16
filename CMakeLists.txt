@@ -8,7 +8,6 @@ include_directories(.)
 add_executable(DS1_2020_Wet2
         # AVL_tests_OLD.h
         AvlTree.h
-        Course.cpp
         Course.h
         CoursesManager.cpp
         CoursesManager.h
@@ -16,8 +15,8 @@ add_executable(DS1_2020_Wet2
         library2.cpp
         library2.h
         List.h
-        main.cpp
-        # main2.cpp
+        # main.cpp
+        main2.cpp
         MyClass.h
         TripleKey.h
         TripleKey.cpp)

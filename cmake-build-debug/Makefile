@@ -123,33 +123,6 @@ DS1_2020_Wet2/fast:
 	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/build
 .PHONY : DS1_2020_Wet2/fast
 
-Course.o: Course.cpp.o
-
-.PHONY : Course.o
-
-# target to build an object file
-Course.cpp.o:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/Course.cpp.o
-.PHONY : Course.cpp.o
-
-Course.i: Course.cpp.i
-
-.PHONY : Course.i
-
-# target to preprocess a source file
-Course.cpp.i:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/Course.cpp.i
-.PHONY : Course.cpp.i
-
-Course.s: Course.cpp.s
-
-.PHONY : Course.s
-
-# target to generate assembly for a file
-Course.cpp.s:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/Course.cpp.s
-.PHONY : Course.cpp.s
-
 CoursesManager.o: CoursesManager.cpp.o
 
 .PHONY : CoursesManager.o
@@ -231,32 +204,32 @@ library2.cpp.s:
 	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.s
 .PHONY : library2.cpp.s
 
-main.o: main.cpp.o
+main2.o: main2.cpp.o
 
-.PHONY : main.o
+.PHONY : main2.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/main.cpp.o
-.PHONY : main.cpp.o
+main2.cpp.o:
+	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/main2.cpp.o
+.PHONY : main2.cpp.o
 
-main.i: main.cpp.i
+main2.i: main2.cpp.i
 
-.PHONY : main.i
+.PHONY : main2.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/main.cpp.i
-.PHONY : main.cpp.i
+main2.cpp.i:
+	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/main2.cpp.i
+.PHONY : main2.cpp.i
 
-main.s: main.cpp.s
+main2.s: main2.cpp.s
 
-.PHONY : main.s
+.PHONY : main2.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/main.cpp.s
-.PHONY : main.cpp.s
+main2.cpp.s:
+	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/main2.cpp.s
+.PHONY : main2.cpp.s
 
 # Help Target
 help:
@@ -267,9 +240,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... DS1_2020_Wet2"
 	@echo "... edit_cache"
-	@echo "... Course.o"
-	@echo "... Course.i"
-	@echo "... Course.s"
 	@echo "... CoursesManager.o"
 	@echo "... CoursesManager.i"
 	@echo "... CoursesManager.s"
@@ -279,9 +249,9 @@ help:
 	@echo "... library2.o"
 	@echo "... library2.i"
 	@echo "... library2.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... main2.o"
+	@echo "... main2.i"
+	@echo "... main2.s"
 .PHONY : help
 
 

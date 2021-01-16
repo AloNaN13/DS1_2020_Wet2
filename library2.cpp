@@ -1,17 +1,5 @@
+
 #include "library2.h"
-#include "CoursesManager.h"
-void *Init(){
-    CoursesManager* DS = new CoursesManager();
-    return (void*)DS;
-}
-
-/* OLD CODE FROM WET1
- *
- *
-
-
-
-#include "library.h"
 #include "CoursesManager.h"
 
 // helper function
@@ -29,16 +17,17 @@ StatusType getStatusTypeFromCMResult(CMResult res){
     return SUCCESS; // only for compilation - would not reach this line
 }
 
+
 void *Init(){
     CoursesManager* DS = new CoursesManager();
     return (void*)DS;
 }
 
-StatusType AddCourse (void *DS, int courseID, int numOfClasses){
+StatusType AddCourse (void *DS, int courseID){
     if(DS == nullptr){
         return INVALID_INPUT;
     }
-    return getStatusTypeFromCMResult(((CoursesManager*)DS)->AddCourse(courseID, numOfClasses));
+    return getStatusTypeFromCMResult(((CoursesManager*)DS)->AddCourse(courseID));
 }
 
 StatusType RemoveCourse(void *DS, int courseID){
@@ -46,6 +35,13 @@ StatusType RemoveCourse(void *DS, int courseID){
         return INVALID_INPUT;
     }
     return getStatusTypeFromCMResult(((CoursesManager*)DS)->RemoveCourse(courseID));
+}
+
+StatusType AddClass(void *DS, int courseID, int* classID){
+    if(DS == nullptr){
+        return INVALID_INPUT;
+    }
+    return getStatusTypeFromCMResult(((CoursesManager*)DS)->AddClass(courseID, classID));
 }
 
 StatusType WatchClass(void *DS, int courseID, int classID, int time){
@@ -62,11 +58,11 @@ StatusType TimeViewed(void *DS, int courseID, int classID, int *timeViewed){
     return getStatusTypeFromCMResult(((CoursesManager*)DS)->TimeViewed(courseID, classID, timeViewed));
 }
 
-StatusType GetMostViewedClasses(void *DS, int numOfClasses, int *courses, int *classes){
+StatusType GetIthWatchedClass(void *DS, int i, int *courseID, int *classID){
     if(DS == nullptr){
         return INVALID_INPUT;
     }
-    return getStatusTypeFromCMResult(((CoursesManager*)DS)->GetMostViewedClasses(numOfClasses, courses, classes));
+    return getStatusTypeFromCMResult(((CoursesManager*)DS)->GetIthWatchedClass(i, courseID, classID));
 }
 
 void Quit(void** DS){
