@@ -1,58 +1,101 @@
 
 /****************************************************************************/
-/* NOTE ABOUT THE HASHTABLE                                                 */
+/* IMPLEMENTATION OF HASHTABLE USING DYNAMIC ARRAYS OF LISTS                */
 /****************************************************************************/
 
 #ifndef DS1_WET2_HASHTABLE_H
 #define DS1_WET2_HASHTABLE_H
 
 #include "List.h"
-
+/*
+ * ENUM FOR RESULT OPTIONS IN FUNCTIONS
+ */
 typedef enum HashTableResult_t{
     HT_SUCCESS,
     HT_ALLOCATION_ERROR,
     HT_ALREADY_EXISTS,
     HT_DOESNT_EXISTS
 }HTResult;
-
+/*
+ * ENUM FOR OPERATION ON THE TABLE
+ */
 enum{
     EXPAND,
     SHRINK,
     FUNCS
 };
 
-
-// Add comments
+/**
+ * tamplate for ha
+ * @tparam Element
+ */
 
 
 template<class Element>
 class HashTable{
 private:
-    List<Element>* _hash_table;
-    int _hash_table_size;
+    List<Element>* _hash_table; // pointer to the array of lists
+    int _hash_table_size; //table size
 public:
-    //ctor
+    /**
+     * constructor initializing a new array of lists given the size
+     * @param size
+     */
     explicit HashTable(int size): _hash_table(new List<Element>[size]), _hash_table_size(size) {};
-    //dtor
-    ~HashTable() {delete[] _hash_table;};
-    //delete cctor + assignctor
+    /**
+     * destructor frees the allocations of the hash array
+     */
+    ~HashTable() {
+
+        delete[] _hash_table;};
+    /**
+     * DONT USR COPY CONSTRUCTOR AND "=" OPERATOR IN THIS CONTEXT
+     * @param hash_table
+     */
     HashTable(const HashTable& hash_table) = default;
     HashTable& operator=(const HashTable& hash_table) = delete;
 
-    //getters+setters
+    /*
+     * BASIC GETTERS AND SETTERS
+     */
     ListNode<Element>* getTableNode(int key);
     int getTableSize() {return _hash_table_size;};
-    //other funcs
+    /**
+     * hashes the given key while considering table size changes (in purpose)
+     * @param key
+     * @param purpose if we need to shink, expand or func,
+     * @return hashed key
+     */
     int getHashedKey(int key, int purpose);
+    /**
+     * insert a new node to the table lists
+     * @param node_to_insert
+     * @return result
+     */
     HTResult insertTableNode(ListNode<Element>* node_to_insert);
+    /**
+     * removes the given key from the table
+     * @param key
+     * @return result
+     */
     HTResult removeTableNode(int key);
-    //HTResult shrinkTable();
-    //HTResult expandTable();
+    /**
+     * adjust the new table considering number of elements that need to be fitted.
+     * @param purpose : table options: EXPAND or SHRINK
+     * @return result
+     */
     HTResult adjustTable(int purpose);
+    /**
+     * deletes all the hashed data in the table, not the nodes but the data that was hashed
+     * @return result
+     */
     HTResult deleteHashValues();
 
 };
 
+/*
+ * IMPLEMENTATION OF FUNCTIONS
+ */
 
 template<class Element>
 ListNode<Element>* HashTable<Element>::getTableNode(int key){
@@ -103,17 +146,6 @@ HTResult HashTable<Element>::removeTableNode(int key){
     return HT_SUCCESS;
 }
 
-/*
-template<class Element>
-HTResult HashTable<Element>::shrinkTable(){
-    return adjustTable(SHRINK);
-}
-
-template<class Element>
-HTResult HashTable<Element>::expandTable(){
-    return adjustTable(EXPAND);
-}
-*/
 
 template<class Element>
 HTResult HashTable<Element>::adjustTable(int purpose){

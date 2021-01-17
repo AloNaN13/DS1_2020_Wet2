@@ -5,7 +5,7 @@
 
 
 /****************************************************************************/
-/* NOTE ABOUT THE LIST, NOT GENERIC                                    */
+/* NOTE ABOUT THE LIST, NOT GENERIC                                         */
 /****************************************************************************/
 
 #ifndef DS1_WET2_LIST_H
@@ -18,10 +18,15 @@ typedef enum ListResult_t{
     LIST_DOESNT_EXISTS
 }ListResult;
 
+/*
+ * List implemented as if the node is created outside of the list
+ * List is not generic, no use of iterator in List
+ */
 
-// List implemented as if the node is created outside of the list
-// List is not generic, no use of iterator in List
-
+/**
+ * CLASS NODE ELEMENT FOR ENTITY IN THE LIST
+ * @tparam Element
+ */
 template<class Element>
 class ListNode{
 private:
@@ -30,14 +35,22 @@ private:
     ListNode* _prev_node; // a pointer to previous list's node
     ListNode* _next_node; // a pointer to next list's node
 public:
-
+    /**
+     * constructor
+     * @param key
+     * @param value
+     */
     ListNode(int key, Element* value): _key(key), _value(value), _prev_node(nullptr), _next_node(nullptr) {};
-    //another ctor?
+    /**
+     * default destructor, copy constructor and operator "="
+     */
     ~ListNode() = default;
     ListNode(const ListNode& list_node) = default;
     ListNode& operator=(const ListNode& list_node) = default;
 
-    // setters+getters
+    /*
+     * BASIC GETTERS AND SETTERS
+     */
     int getNodeKey() {return this->_key;};
     Element* getNodeValue() {return this->_value;};
     ListNode* getPrevNode() {return this->_prev_node;};
@@ -48,35 +61,59 @@ public:
 };
 
 
-// any need to keep list length?
+/**
+ * LIST CLASS
+ * @tparam Element
+ */
 
 template<class Element>
 class List{
 private:
-    ListNode<Element>* _first_node{};
-    ListNode<Element>* _last_node;
+    ListNode<Element>* _first_node{}; //lists first element
+    ListNode<Element>* _last_node; //lists last element
 public:
-
+    /**
+     * constructor,initialize to nullptr all the pointers, and default destructor
+     */
     List(): _first_node(nullptr), _last_node(nullptr) {};
     ~List();
+    /**
+     * deletes all the nodes in the list
+     * @param node
+     */
     static void deleteListsNodes(ListNode<Element>* node);
 
-    //cctor + assign
+    /**
+     * default copy constructor and "=" operator
+     * @param list
+     */
     List(const List& list) = default;
     List& operator=(const List& list) = default;
 
-    // getters
+    /*
+     * BASIC GETTERS
+     */
     ListNode<Element>* getListsFirstNode() {return this->_first_node;};
     ListNode<Element>* getListsLastNode() {return this->_last_node;};
-    // no need for setters?
 
-    // other functions
+    /**
+     * insert new node of element to the list
+     * @param node_to_insert
+     * @return result
+     */
     ListResult insertListNode(ListNode<Element>* node_to_insert);
+    /**
+     * remove a given node from the list
+     * @param node_to_remove
+     * @return result
+     */
     ListResult removeListNode(ListNode<Element>* node_to_remove);
 };
 
 
-
+/*
+ * IMPLEMENTATIONS
+ */
 
 template <class Element>
 void List<Element>::deleteListsNodes(ListNode<Element>* node){
@@ -93,8 +130,6 @@ List<Element>::~List(){
     }
 }
 
-// insert the given node as the first node
-// no need to check if the node exists - happens outside of func?
 template <class Element>
 ListResult List<Element>::insertListNode(ListNode<Element>* node_to_insert) {
 
@@ -114,7 +149,7 @@ ListResult List<Element>::insertListNode(ListNode<Element>* node_to_insert) {
 }
 
 
-// no need to check if the node exists - happens outside of func?
+// no need to check if the node exists - happens outside of func
 template <class Element>
 ListResult List<Element>::removeListNode(ListNode<Element>* node_to_remove) {
     if(node_to_remove != _first_node){
