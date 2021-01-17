@@ -51,7 +51,7 @@ CMResult CoursesManager::RemoveCourse(int courseID) {
             _general_views_tree->remove(class_to_remove_from_tree);
         }
 
-//        classes_to_remove_table->deleteHashValues();
+        // classes_to_remove_table->deleteHashValues();
         _general_courses_table->removeTableNode(courseID);
         _num_of_courses--;
         delete course_to_remove;
