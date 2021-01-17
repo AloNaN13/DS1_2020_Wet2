@@ -34,13 +34,10 @@ private:
 public:
     CoursesManager(): _general_courses_table(new HashTable<Course>(2)),
                       _general_views_tree(new AvlTree<TripleKey,TripleKey>),
-                      _num_of_classes(0), _num_of_viewed_classes(0), _num_of_courses(0) {
-
-    }; // need to implement it more explicitly?
+                      _num_of_courses(0), _num_of_classes(0), _num_of_viewed_classes(0) {}; // need to implement it more explicitly?
     ~CoursesManager()  {this->_general_courses_table->deleteHashValues();
-    delete _general_courses_table;
-    delete _general_views_tree;
-    };
+                        delete _general_courses_table;
+                        delete _general_views_tree;};
     CoursesManager(const CoursesManager& courses_manager) = default;
     CoursesManager& operator=(const CoursesManager& courses_manager) = delete;
 

@@ -13,27 +13,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0275b312-6ae9-4184-b8b2-f5a04d5991cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvlTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/AvlTree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Course.h" beforeDir="false" afterPath="$PROJECT_DIR$/Course.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoursesManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CoursesManager.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoursesManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/CoursesManager.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyClass.h" beforeDir="false" afterPath="$PROJECT_DIR$/MyClass.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TripleKey.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TripleKey.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DS1_2020_Wet2.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DS1_2020_Wet2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DS1_2020_Wet2.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/library2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/non-official/testswet2.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610037700255</updated>
       <workItem from="1610037701518" duration="23797000" />
-      <workItem from="1610794774396" duration="16001000" />
+      <workItem from="1610794774396" duration="17663000" />
     </task>
     <servers />
   </component>

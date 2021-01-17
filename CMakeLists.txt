@@ -19,4 +19,5 @@ add_executable(DS1_2020_Wet2
         main2.cpp
         MyClass.h
         TripleKey.h
-        TripleKey.cpp)
+        TripleKey.cpp
+        )

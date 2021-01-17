@@ -17,11 +17,11 @@ CMResult CoursesManager::AddCourse(int courseID){
         // free(course_node);
 
         // when needed - expand general_courses_table
+        if(_num_of_courses == _general_courses_table->getTableSize()){
+            _general_courses_table->adjustTable(EXPAND);
+        }
 
-            if(_num_of_courses == _general_courses_table->getTableSize()){
-                _general_courses_table->adjustTable(EXPAND);
-            }
-//            delete course_node;
+        // delete course_node;
 
 
         return CM_SUCCESS;
@@ -79,8 +79,8 @@ CMResult CoursesManager::AddClass(int courseID, int* classID) {
         Course* course_to_add_to = _general_courses_table->getTableNode(courseID)->getNodeValue();
         *classID = course_to_add_to->getNumOfClasses();
 
-        auto* class_to_add = new MyClass(*classID);
-        auto* class_node_to_add = new ListNode<MyClass>(*classID, class_to_add);
+        MyClass* class_to_add = new MyClass(*classID);
+        ListNode<MyClass>* class_node_to_add = new ListNode<MyClass>(*classID, class_to_add);
         HashTable<MyClass>* classes_table_to_add_to = course_to_add_to->getClassesTable();
         classes_table_to_add_to->insertTableNode(class_node_to_add);
         course_to_add_to->setNumOfClasses(course_to_add_to->getNumOfClasses()+1);
@@ -90,7 +90,8 @@ CMResult CoursesManager::AddClass(int courseID, int* classID) {
         if(course_to_add_to->getNumOfClasses() == course_to_add_to->getClassesTable()->getTableSize()){
             _general_courses_table->adjustTable(EXPAND);
         }
-//        delete class_node_to_add;
+        // delete class_node_to_add;
+
         return CM_SUCCESS;
     } catch(...){
         return CM_ALLOCATION_ERROR;
