@@ -12,17 +12,13 @@ CMResult CoursesManager::AddCourse(int courseID){
 
         Course* course = new Course(courseID);
         ListNode<Course> *course_node = new ListNode<Course>(courseID,course);
-        _general_courses_table->insertTableNode(course_node); //where link to course from table?
+        _general_courses_table->insertTableNode(course_node);
         _num_of_courses++;
-        // free(course_node);
 
         // when needed - expand general_courses_table
         if(_num_of_courses == _general_courses_table->getTableSize()){
             _general_courses_table->adjustTable(EXPAND);
         }
-
-        // delete course_node;
-
 
         return CM_SUCCESS;
     } catch(...){
@@ -51,7 +47,6 @@ CMResult CoursesManager::RemoveCourse(int courseID) {
             _general_views_tree->remove(class_to_remove_from_tree);
         }
 
-        // classes_to_remove_table->deleteHashValues();
         _general_courses_table->removeTableNode(courseID);
         _num_of_courses--;
         delete course_to_remove;
@@ -90,7 +85,6 @@ CMResult CoursesManager::AddClass(int courseID, int* classID) {
         if(course_to_add_to->getNumOfClasses() == course_to_add_to->getClassesTable()->getTableSize()){
             course_to_add_to->getClassesTable()->adjustTable(EXPAND);
         }
-        // delete class_node_to_add;
 
         return CM_SUCCESS;
     } catch(...){
@@ -175,17 +169,3 @@ CMResult CoursesManager::GetIthWatchedClass(int i, int *courseID, int *classID){
         return CM_ALLOCATION_ERROR;
     }
 }
-
-
-
-/*
-void CoursesManager::Quit() {
-   int num_of_courses = _general_courses_table.getTableSize();
-   int course_id = _general_courses_table//need to have iteration over list
-   for(int i=0;i<num_of_courses;i++){
-       CoursesManager::RemoveCourse(course_id);
-       course_id
-       ///NOT FINISHED ///
-   }
-}
-*/

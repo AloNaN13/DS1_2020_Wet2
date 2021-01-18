@@ -1,11 +1,6 @@
 
-
-// template instead of void* for course or myclass
-
-
-
 /****************************************************************************/
-/* NOTE ABOUT THE LIST, NOT GENERIC                                         */
+/* GENERIC LIST (FOR COURSES OR MYCLASSES)                                  */
 /****************************************************************************/
 
 #ifndef DS1_WET2_LIST_H
@@ -20,7 +15,7 @@ typedef enum ListResult_t{
 
 /*
  * List implemented as if the node is created outside of the list
- * List is not generic, no use of iterator in List
+ * no use of iterator in List
  */
 
 /**
@@ -148,7 +143,6 @@ ListResult List<Element>::insertListNode(ListNode<Element>* node_to_insert) {
     return LIST_SUCCESS;
 }
 
-
 // no need to check if the node exists - happens outside of func
 template <class Element>
 ListResult List<Element>::removeListNode(ListNode<Element>* node_to_remove) {
@@ -167,7 +161,6 @@ ListResult List<Element>::removeListNode(ListNode<Element>* node_to_remove) {
     delete(node_to_remove);
     return LIST_SUCCESS;
 }
-
 
 
 #endif //DS1_WET2_LIST_H

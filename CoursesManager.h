@@ -21,8 +21,6 @@ typedef enum CMResult_t{
 }CMResult;
 
 
-
-
 class CoursesManager{
 private:
     HashTable<Course>* _general_courses_table; // a dynamic array that represents the courses in the system //coursrs? not int?

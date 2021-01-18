@@ -3,7 +3,7 @@
 /****************************************************************************/
 /*                                                                          */
 /* This file contains the generic Avl Tree we use in the assignment         */
-/*                                                                          */
+/* Upgraded from Wet1 - now contains min/max node + rank                    */
 /*                                                                          */
 /****************************************************************************/
 

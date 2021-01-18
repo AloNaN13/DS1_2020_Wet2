@@ -16,6 +16,7 @@ typedef enum HashTableResult_t{
     HT_ALREADY_EXISTS,
     HT_DOESNT_EXISTS
 }HTResult;
+
 /*
  * ENUM FOR OPERATION ON THE TABLE
  */
@@ -24,11 +25,6 @@ enum{
     SHRINK,
     FUNCS
 };
-
-/**
- * tamplate for ha
- * @tparam Element
- */
 
 
 template<class Element>
@@ -93,6 +89,7 @@ public:
 
 };
 
+
 /*
  * IMPLEMENTATION OF FUNCTIONS
  */
@@ -145,7 +142,6 @@ HTResult HashTable<Element>::removeTableNode(int key){
     }
     return HT_SUCCESS;
 }
-
 
 template<class Element>
 HTResult HashTable<Element>::adjustTable(int purpose){

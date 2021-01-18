@@ -1,13 +1,11 @@
 
-
 /****************************************************************************/
 /*                                                                          */
-/*CLASS FOR TRIPLEKEY = COURSE ID, CLASS ID, NUMBER OF VIEWS                */
-/*THE KEY IS USED FOR SEARCHING IN AVLTREE USING THE 3 PARAMETERS AS KEY    */
+/* CLASS FOR TRIPLEKEY = COURSE ID, CLASS ID, NUMBER OF VIEWS               */
+/* THE KEY IS USED FOR SEARCHING IN AVLTREE USING THE 3 PARAMETERS AS KEY   */
 /* FOR COMPARING AND SORTING                                                */
 /*                                                                          */
 /****************************************************************************/
-
 
 
 #ifndef DS1_WET2_TRIPLEKEY_H

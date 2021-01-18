@@ -1,8 +1,7 @@
 
-
 /****************************************************************************/
 /*                                                                          */
-/* MYCLASS - A CLASS CLASS, CONTAINS CLASS ENTITY INFO.                     */
+/* MYCLASS - A CLASS FOR CLASS, CONTAINS CLASS ENTITY INFO.                 */
 /*                                                                          */
 /****************************************************************************/
 
@@ -17,7 +16,6 @@ class MyClass{
 private:
     int _id; // the class id
     int _num_of_views; // number of total class's views
-
 public:
     /**
      * CONSTRATCTOR

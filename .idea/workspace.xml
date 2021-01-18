@@ -13,7 +13,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0275b312-6ae9-4184-b8b2-f5a04d5991cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvlTree.h" beforeDir="false" afterPath="$PROJECT_DIR$/AvlTree.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoursesManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CoursesManager.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoursesManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/CoursesManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/List.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyClass.h" beforeDir="false" afterPath="$PROJECT_DIR$/MyClass.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripleKey.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/TripleKey.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripleKey.h" beforeDir="false" afterPath="$PROJECT_DIR$/TripleKey.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610037700255</updated>
       <workItem from="1610037701518" duration="23797000" />
-      <workItem from="1610794774396" duration="32325000" />
+      <workItem from="1610794774396" duration="35005000" />
     </task>
     <servers />
   </component>
