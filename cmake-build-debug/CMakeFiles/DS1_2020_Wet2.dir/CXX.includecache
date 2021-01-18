@@ -46,6 +46,10 @@ List.h
 List.h
 /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/List.h
 
+/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/TripleKey.cpp
+TripleKey.h
+/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/TripleKey.h
+
 /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/TripleKey.h
 List.h
 /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/List.h
@@ -58,5 +62,17 @@ library2.h
 CoursesManager.h
 /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/CoursesManager.h
 
+/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/library2.h
+
+/cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/main2.cpp
+assert.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+library2.h
 /cygdrive/c/CS_Technion/234218-Data_Structures_1/Winter2021/DS1_2020_Wet2/library2.h
 

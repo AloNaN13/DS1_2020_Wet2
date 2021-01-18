@@ -20,9 +20,9 @@
 
 class TripleKey{
 private:
-    int _class_id; //KEY 1
+    int _num_of_views;//KEY 1
     int _course_id;//KEY 2
-    int _num_of_views;//KEY 3
+    int _class_id; //KEY 3
 public:
     /**
      * constructor
