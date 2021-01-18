@@ -13,8 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0275b312-6ae9-4184-b8b2-f5a04d5991cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TripleKey.h" beforeDir="false" afterPath="$PROJECT_DIR$/TripleKey.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoursesManager.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CoursesManager.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610037700255</updated>
       <workItem from="1610037701518" duration="23797000" />
-      <workItem from="1610794774396" duration="29146000" />
+      <workItem from="1610794774396" duration="31400000" />
     </task>
     <servers />
   </component>
@@ -99,6 +98,11 @@
           <url>file://$PROJECT_DIR$/main.cpp</url>
           <line>52</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>37</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

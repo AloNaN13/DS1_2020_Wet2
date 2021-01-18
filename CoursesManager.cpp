@@ -88,7 +88,7 @@ CMResult CoursesManager::AddClass(int courseID, int* classID) {
 
         // when needed - expand _classes_table
         if(course_to_add_to->getNumOfClasses() == course_to_add_to->getClassesTable()->getTableSize()){
-            _general_courses_table->adjustTable(EXPAND);
+            course_to_add_to->getClassesTable()->adjustTable(EXPAND);
         }
         // delete class_node_to_add;
 
