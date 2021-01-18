@@ -150,6 +150,33 @@ CoursesManager.cpp.s:
 	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.s
 .PHONY : CoursesManager.cpp.s
 
+TimeCheck.o: TimeCheck.cpp.o
+
+.PHONY : TimeCheck.o
+
+# target to build an object file
+TimeCheck.cpp.o:
+	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/TimeCheck.cpp.o
+.PHONY : TimeCheck.cpp.o
+
+TimeCheck.i: TimeCheck.cpp.i
+
+.PHONY : TimeCheck.i
+
+# target to preprocess a source file
+TimeCheck.cpp.i:
+	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/TimeCheck.cpp.i
+.PHONY : TimeCheck.cpp.i
+
+TimeCheck.s: TimeCheck.cpp.s
+
+.PHONY : TimeCheck.s
+
+# target to generate assembly for a file
+TimeCheck.cpp.s:
+	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/TimeCheck.cpp.s
+.PHONY : TimeCheck.cpp.s
+
 TripleKey.o: TripleKey.cpp.o
 
 .PHONY : TripleKey.o
@@ -204,33 +231,6 @@ library2.cpp.s:
 	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.s
 .PHONY : library2.cpp.s
 
-main2.o: main2.cpp.o
-
-.PHONY : main2.o
-
-# target to build an object file
-main2.cpp.o:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/main2.cpp.o
-.PHONY : main2.cpp.o
-
-main2.i: main2.cpp.i
-
-.PHONY : main2.i
-
-# target to preprocess a source file
-main2.cpp.i:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/main2.cpp.i
-.PHONY : main2.cpp.i
-
-main2.s: main2.cpp.s
-
-.PHONY : main2.s
-
-# target to generate assembly for a file
-main2.cpp.s:
-	$(MAKE) -f CMakeFiles/DS1_2020_Wet2.dir/build.make CMakeFiles/DS1_2020_Wet2.dir/main2.cpp.s
-.PHONY : main2.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,15 +243,15 @@ help:
 	@echo "... CoursesManager.o"
 	@echo "... CoursesManager.i"
 	@echo "... CoursesManager.s"
+	@echo "... TimeCheck.o"
+	@echo "... TimeCheck.i"
+	@echo "... TimeCheck.s"
 	@echo "... TripleKey.o"
 	@echo "... TripleKey.i"
 	@echo "... TripleKey.s"
 	@echo "... library2.o"
 	@echo "... library2.i"
 	@echo "... library2.s"
-	@echo "... main2.o"
-	@echo "... main2.i"
-	@echo "... main2.s"
 .PHONY : help
 
 

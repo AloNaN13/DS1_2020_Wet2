@@ -10,6 +10,9 @@ CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.o: ../List.h
 CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.o: ../MyClass.h
 CMakeFiles/DS1_2020_Wet2.dir/CoursesManager.cpp.o: ../TripleKey.h
 
+CMakeFiles/DS1_2020_Wet2.dir/TimeCheck.cpp.o: ../TimeCheck.cpp
+CMakeFiles/DS1_2020_Wet2.dir/TimeCheck.cpp.o: ../library2.h
+
 CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o: ../AvlTree.h
 CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o: ../List.h
 CMakeFiles/DS1_2020_Wet2.dir/TripleKey.cpp.o: ../TripleKey.cpp
@@ -24,7 +27,4 @@ CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o: ../MyClass.h
 CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o: ../TripleKey.h
 CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o: ../library2.cpp
 CMakeFiles/DS1_2020_Wet2.dir/library2.cpp.o: ../library2.h
-
-CMakeFiles/DS1_2020_Wet2.dir/main2.cpp.o: ../library2.h
-CMakeFiles/DS1_2020_Wet2.dir/main2.cpp.o: ../main2.cpp
 

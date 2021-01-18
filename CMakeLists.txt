@@ -16,7 +16,8 @@ add_executable(DS1_2020_Wet2
         library2.h
         List.h
         # main.cpp
-        main2.cpp
+        # main2.cpp
+        TimeCheck.cpp
         MyClass.h
         TripleKey.h
         TripleKey.cpp
